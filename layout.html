@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/style.css">
+        <title>Pay no more than cheap</title>
+        <script src="script/script.js">    
+        </script>
+            
+    </head>
+    <body>
+
+        <div class="container">
+
+          <article class="input">
+
+              <label for="IDfyear">Första årets värdeminskning: (%)</label>
+              <br>
+              <input type="text" id="IDfyear" name="fyear" value="25">
+              <br>
+              <label for="IDayear">Årlig värdeminskning: (%)</label>
+              <br>
+              <input type="text" id="IDayear" name="ayear" value="15">
+              <br>
+              <label for="IDdistance">Antal mil:</label>
+              <br>
+              <input type="text" id="IDdistance" name="distance">
+              <br>
+              <label for="IDold">Hur gammal är bilen? (år):</label>
+              <br>
+              <input type="text" id="IDold" name="old">
+              <br>
+              <label for="IDvalasnew">Bilens värde som ny:</label>
+              <br>
+              <input type="text" id="IDvalasnew" name="valasnew">
+              <br>
+              <br>
+              <input type="submit" onclick="msg()">
+
+          </article>
+
+          <article class="description">
+              Du bör ange bilens nypris som den kostar idag för att matcha dagens penningvärde.<br />
+              Om just den modellen inte finns längre så kan du ange nypris sista året innan den slutade tillverkas.<br />
+              När du anger antal mil så kommer sidan endast ge förslag på nya värden att prova med.<br />
+              OBSERVERA ATT ALGORITMEN INTE TAR NÅGON MATEMATISK HÄNSYN TILL MILTALEN.<br />
+              <br />
+              Årliga värdeminskningen på en bil är enligt statistik 15% (vid 2000 mil/år) <br />
+              Första året när bilen är helt ny tappar den ca 25%<br />
+              <br />
+              Ovan förvalda värden ger en ganska bra bild av medelbilen som ofta fungerar bra för att få fram en uppskattning.<br />
+              Statistiken visar också att värdeminskningen skiljer ca ± 6% från medelvärdet beroende på bilmodell.<br />
+              <br />
+              Modifiera värdena tills du kommer fram till ett rimligt pris för bilen som du tittar på!<br />
+              <hr>
+          </article>
+
+          <div class="output">
+            <h2 id="results"></h2>
+            <br />
+            <br />
+            <h2 id="results1"></h2>
+            <br />
+            <br />
+            <h2 id="results2"></h2>
+           </div>
+        </div>
+        <div class="footer">
+            <h1>Pay no more than cheap</h1> 
+        </div>
+
+        <article>
+        </article>
+
+    </body>
+</html>
